@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bonjour</title>
+</head>
+
+<body>
+    {% if nom != "" and prenom != "" and age != "" %}
+        <h1> Hello {{nom}} {{prenom}} that is {{age}} years old</h1>
+    {% else %}
+        <h1> Hello world </h1>
+    {%endif%}
+</body>
+
+</html>
