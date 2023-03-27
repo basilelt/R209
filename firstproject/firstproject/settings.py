@@ -31,13 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'myfirstapp.apps.MyfirstappConfig', # ajouter cette ligne, MyfirstappConfig est le nom de la classe dans le fichier app.py de l'application
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myfirstapp.apps.MyfirstappConfig', # ajouter cette ligne, MyfirstappConfig est le nom de la classe dans le fichier app.py de l'application
 ]
 
 MIDDLEWARE = [
