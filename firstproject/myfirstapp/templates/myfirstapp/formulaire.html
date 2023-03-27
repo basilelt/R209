@@ -1,4 +1,33 @@
+<!-- héritage du contenu du gabarit squelette main.hml -->
+{% extends "main.html" %} <!-- si le gabarit n'est pas dans templates
+                            mais dans le répertoire templates/myfirstapp/,
+                            il faudra ajouter le chemin d'accès avant le nom
+                            du fichierdonc extends "myfirstapp/main.html" -->
 
+<!-- définition de ce que contiendra la balise title du head -->
+{% block title %}
+    Mon formulaire
+{% endblock %}
+
+{% block content %}
+    <!-- les champs de formulaires -->
+    <form action="/myfirstapp/bonjour" method="get" />
+        {% csrf_token %}
+
+        <label for="nom"> Nom :</label>
+        <input type="text" name="nom"/><br>
+
+        <label for="prenom"> Prénom :</label>
+        <input type="text" name="prenom"/><br>
+
+        <label for="age"> Âge :</label>
+        <input type="text" name="age"/><br>
+        <input type="submit" value="envoyer"/><br>
+    </form>
+{% endblock %}
+
+
+<!--
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,3 +53,4 @@
 </body>
 
 </html>
+-->
