@@ -3,7 +3,7 @@
 
 <head>
     {% load static %}
-    <link rel="stylesheet" href="{%static␣'myfirstapp/index.css'␣%}">
+    <link rel="stylesheet" href="{%static '/myfirstapp/index.css'%}">
     <title>{% block title %}Mon Site {% endblock %} </title>
 </head>
 
@@ -11,8 +11,8 @@
     <aside id="sidebar">
         {% block sidebar %}
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/myfirstapp/index">Index</a></li>
+                <li><a href="/myfirstapp/index">Home</a></li>
+                <li><a href="/myfirstapp/formulaire">Formulaire</a></li>
             </ul>
         {% endblock %}
     </aside>
