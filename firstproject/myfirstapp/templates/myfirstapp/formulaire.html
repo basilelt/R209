@@ -12,19 +12,24 @@
 {% block content %}
     <!-- les champs de formulaires -->
 
-    <form action="/myfirstapp/bonjour" method="get" />
+    <form action="/myfirstapp/bonjour" method="get">
         {% csrf_token %}
+        <div class="in">
+            <label for="nom"> Nom :</label>
+            <input type="text" name="nom"/>
+        </div>
 
-        <label for="nom"> Nom :</label>
-        <input type="text" name="nom"/><br>
+        <div class="in">
+            <label for="prenom"> Prénom :</label>
+            <input type="text" name="prenom"/>
+        </div>
 
-        <label for="prenom"> Prénom :</label>
-        <input type="text" name="prenom"/><br>
-
-        <label for="age"> Âge :</label>
-        <input type="text" name="age"/><br>
-        <input type="submit" value="envoyer"/><br>
-    </form>
+        <div class="in">
+            <label for="age"> Âge :</label>
+            <input type="text" name="age"/>
+        </div>
+        <input class="send" type="submit" value="Envoyer"/>
+</form>
 {% endblock %}
 
 

@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myfirstapp.apps.MyfirstappConfig', # ajouter cette ligne, MyfirstappConfig est le nom de la classe dans le fichier app.py de l'application
+    'myfirstapp.apps.MyfirstappConfig', # Ajouter cette ligne, MyfirstappConfig est le nom de la classe dans le fichier app.py de l'application
+    'bibliotheque.apps.BibliothequeConfig',
 ]
 
 MIDDLEWARE = [

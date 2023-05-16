@@ -62,10 +62,39 @@ button {
     color: #59910F;
 }
 
-div {
-        margin: 0;
-        background-color: rgb(44, 44, 44);
-        min-height: 100vh;
-        display:flex;
-        flex-direction:column;
+.block {
+    margin: 0;
+    background-color: rgb(44, 44, 44);
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+form {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	color: #DBDBDB;
+	font-size: 1em;
+	display: grid;
+	justify-content: center;
+    padding-top: 16px;
+}
+
+.in {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 12px;
+	text-decoration: solid;
+}
+
+input{
+	border-radius: 6px;
+}
+
+.send {
+	background-color: #6A7466;
+	color: #DBDBDB;
+	font-weight: bold;
+	font-size: 1.2em;
 }
