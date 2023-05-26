@@ -1,0 +1,11 @@
+{% extends "bibliotheque/main.html" %}
+
+{% block title %}
+    Affiche un livre
+{% endblock %}
+
+{% block content %}
+    <h1>Information du livre {{livre.titre}}</h1>
+    <p> {{livre}} d'ID = {{livre.id}} </p></br>
+    <p> {{livre.resume}} </p>
+{% endblock %}

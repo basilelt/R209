@@ -1,0 +1,36 @@
+<!-- héritage du contenu du gabarit squelette main.hml -->
+{% extends "bibliotheque/main.html" %} <!-- si le gabarit n'est pas dans templates
+                            mais dans le répertoire templates/myfirstapp/,
+                            il faudra ajouter le chemin d'accès avant le nom
+                            du fichier donc extends "myfirstapp/main.html" -->
+
+<!-- définition de ce que contiendra la balise title du head -->
+{% block title %}
+    Index
+{% endblock %}
+
+{% block content %}
+    <h1> Ceci est un site de bibliothèque </h1>
+{% endblock %}
+
+
+<!--
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    {% load static %}
+    
+    <meta charset="UTF-8">
+ <!-
+        <link rel="stylesheet" type="text/css" href="{%static '/myfirstapp/index.css'%}">
+->
+    <title>Index</title>
+</head>
+
+<body>
+    <h1> Hello World </h1>
+</body>
+
+</html>
+-->

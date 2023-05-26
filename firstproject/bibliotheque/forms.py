@@ -9,7 +9,7 @@ class LivreForm(ModelForm):
         labels = {
             'titre' : _('Titre'),
             'auteur' : _('Auteur') ,
-            'date_parution' : _('date␣de␣parution'),
-            'nombre_pages' : _('nombres␣de␣pages'),
+            'date_parution' : _('Date de parution'),
+            'nombre_pages' : _('Nombres de pages'),
             'resume' : _('Résumé')
         }

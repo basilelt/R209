@@ -1,0 +1,24 @@
+{% extends "bibliotheque/main.html" %}
+
+{% block title %}
+    Ajout d'un livre
+{% endblock %}
+
+{% block content %}
+    <h1>Liste de tous les livres</h1>
+    {% for i in all %}
+        {% if i.nombre_pages > 500 %}
+            <p> {{i}} est grand 
+                <a class="link" href="/bibliotheque/affiche/{{i.id}}"> afficher </a>
+                <a class="link" href="/bibliotheque/update/{{i.id}}"> modifier </a>
+                <a class="link" href="/bibliotheque/delete/{{i.id}}"> supprimer </a>
+            </p>
+        {%else%}
+        <p> {{i}} est petit
+            <a class="link" href="/bibliotheque/affiche/{{i.id}}"> afficher </a>
+            <a class="link" href="/bibliotheque/update/{{i.id}}"> modifier </a>
+            <a class="link" href="/bibliotheque/delete/{{i.id}}"> supprimer </a>
+        </p>
+        {%endif%}
+    {%endfor%}
+{% endblock %}
