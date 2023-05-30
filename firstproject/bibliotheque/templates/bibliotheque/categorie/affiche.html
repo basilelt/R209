@@ -1,0 +1,11 @@
+{% extends "bibliotheque/categorie/index.html" %}
+
+{% block title %}
+    Affiche une categorie
+{% endblock %}
+
+{% block content %}
+    <h1>Information du livre {{categorie.nom}}</h1>
+    <p> {{categorie}} d'ID = {{categorie.id}} </p></br>
+    <p> {{categorie.description}} </p>
+{% endblock %}

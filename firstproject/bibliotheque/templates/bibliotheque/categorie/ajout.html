@@ -1,11 +1,11 @@
-{% extends "bibliotheque/main.html" %}
+{% extends "bibliotheque/categorie/index.html" %}
 
 {% block title %}
-    Ajout d'un livre
+    Ajout d'une categorie
 {% endblock %}
 
 {% block content %}
-    <form method="post" action="/bibliotheque/traitement/">
+    <form method="post" action="/bibliotheque/categorie/traitement/">
         {% csrf_token %}
         <div class="in">
             {{ form }} <!-- permet d'afficher tous les champs sous forme d'une liste (form.as_ul)-->

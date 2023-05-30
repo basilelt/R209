@@ -1,0 +1,15 @@
+{% extends "bibliotheque/categorie/index.html" %}
+
+{% block title %}
+    Mise à jour
+{% endblock %}
+
+{% block content %}
+    <form method="post" action="/bibliotheque/traitementupdate/{{categorie.id}}/">
+        {% csrf_token %}
+        <div class="in">    
+            {{ form }}
+        </div>
+        <input class="send" type="submit" value="Envoyer les données"\>
+    </form>
+{% endblock %}

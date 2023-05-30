@@ -1,0 +1,15 @@
+{% extends "bibliotheque/livre/index.html" %}
+
+{% block title %}
+    Ajout d'un livre
+{% endblock %}
+
+{% block content %}
+    <form method="post" action="/bibliotheque/livre/traitement/">
+        {% csrf_token %}
+        <div class="in">
+            {{ form }} <!-- permet d'afficher tous les champs sous forme d'une liste (form.as_ul)-->
+        </div>
+        <input class="send" type="submit" value="Envoyer les données"\>
+    </form>
+{% endblock %}

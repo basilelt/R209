@@ -6,31 +6,17 @@
 
 <!-- définition de ce que contiendra la balise title du head -->
 {% block title %}
-    Index
+    Index Livres
 {% endblock %}
 
 {% block content %}
-    <h1> Ceci est un site de bibliothèque </h1>
+    <h1> Livres </h1>
 {% endblock %}
 
-
-<!--
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    {% load static %}
-    
-    <meta charset="UTF-8">
- <!-
-        <link rel="stylesheet" type="text/css" href="{%static '/myfirstapp/index.css'%}">
-->
-    <title>Index</title>
-</head>
-
-<body>
-    <h1> Hello World </h1>
-</body>
-
-</html>
--->
+{% block sidebar %}
+<nav>
+    <button><a class="selector" href="/bibliotheque/home">Home</a></button></br>
+    <button><a class="selector" href="/bibliotheque/livre/ajout">Ajout</a></button></br>
+    <button><a class="selector" href="/bibliotheque/livre/all">All</a></button></br>
+</nav>    
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "bibliotheque/categorie/index.html" %}
+
+{% block title %}
+    Ajout d'un livre
+{% endblock %}
+
+{% block content %}
+    <h1>Liste de toutes les catégories</h1>
+    {% for i in all %}
+        <p> {{i}} est grand 
+            <a class="link" href="/bibliotheque/categorie/affiche/{{i.id}}"> afficher </a>
+            <a class="link" href="/bibliotheque/categorie/update/{{i.id}}"> modifier </a>
+            <a class="link" href="/bibliotheque/categorie/delete/{{i.id}}"> supprimer </a>
+        </p>
+    {%endfor%}
+{% endblock %}

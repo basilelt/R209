@@ -3,18 +3,17 @@
 
 <head>
     {% load static %}
-    <link rel="stylesheet" href="{%static '/myfirstapp/index.css'%}">
+    <link rel="stylesheet" href="{%static 'bibliotheque/index.css'%}">
     <meta charset="UTF-8">
     <title>{% block title %}Mon Site de Bibliothèque {% endblock %} </title>
 </head>
-<link rel="stylesheet" href="{%static 'bibliotheque/index.css' %}">
+
 <body>
     <aside id="sidebar">
         {% block sidebar %}
             <nav>
-                <button><a class="selector" href="/bibliotheque/index">Home</a></button></br>
-                <button><a class="selector" href="/bibliotheque/ajout">Ajout</a></button></br>
-                <button><a class="selector" href="/bibliotheque/all">All</a></button></br>
+                <button><a class="selector" href="/bibliotheque/livre/index">Livre</a></button></br>
+                <button><a class="selector" href="/bibliotheque/categorie/index">Catégorie</a></button></br>
             </nav>    
         {% endblock %}
     </aside>
