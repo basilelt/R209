@@ -36,7 +36,7 @@ def all(request):
     return render(request,"projet/film/all.html",{"all": all})
 
 def affiche(request, id):
-    film = models.Film.objects.get(pk=id) # méthode pour récupérer les données dans la base avec un id donnée
+    film = models.Film.objects.get(pk=id)
     return render(request,"projet/film/affiche.html",{"film": film})
 
 def update(request, id):

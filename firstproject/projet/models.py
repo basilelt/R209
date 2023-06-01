@@ -10,7 +10,7 @@ class Film(models.Model):
     genre = models.ForeignKey("genre", on_delete=models.CASCADE, default=None)
 
     def __str__(self):
-        chaine = f"{self.titre} un film {self.genre} de {self.duree} produit par {self.producteur} avec {self.acteur}, sortie le {self.date_sortie}"
+        chaine = f"{self.titre} est un film {self.genre}, d'une durée {self.duree}, produit par {self.producteur} avec {self.acteur}, sortie le {self.date_parution}"
         return chaine
     
     def dico(self):
