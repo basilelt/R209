@@ -1,0 +1,11 @@
+{% extends "projet/film/index.html" %}
+
+{% block title %}
+    Affiche un film
+{% endblock %}
+
+{% block content %}
+    <h1>Information du film {{film.titre}}</h1>
+    <p> {{film}} a pour ID : {{film.id}} </p></br>
+    <p> {{film.syno}} </p>
+{% endblock %}

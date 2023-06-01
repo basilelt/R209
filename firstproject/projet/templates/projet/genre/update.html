@@ -1,0 +1,15 @@
+{% extends "projet/genre/index.html" %}
+
+{% block title %}
+    Mise à jour
+{% endblock %}
+
+{% block content %}
+    <form method="post" action="/projet/traitementupdate/{{genre.id}}/">
+        {% csrf_token %}
+        <div class="in">    
+            {{ form }}
+        </div>
+        <input class="send" type="submit" value="Envoyer les données"\>
+    </form>
+{% endblock %}

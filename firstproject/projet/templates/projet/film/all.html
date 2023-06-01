@@ -1,0 +1,17 @@
+{% extends "projet/film/index.html" %}
+
+{% block title %}
+    Affiche tous les films
+{% endblock %}
+
+{% block content %}
+    <h1>Liste de tous les films</h1>
+    {% for film in all %}
+            <p> {{film}} 
+                <a class="link" href="/projet/film/affiche/{{film.id}}"> afficher </a>
+                <a class="link" href="/projet/film/update/{{film.id}}"> modifier </a>
+                <a class="link" href="/projet/film/delete/{{film.id}}"> supprimer </a>
+            </p>
+        {%endif%}
+    {%endfor%}
+{% endblock %}

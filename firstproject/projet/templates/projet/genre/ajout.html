@@ -1,0 +1,15 @@
+{% extends "projet/genre/index.html" %}
+
+{% block title %}
+    Ajout d'un genre
+{% endblock %}
+
+{% block content %}
+    <form method="post" action="/projet/genre/traitement/">
+        {% csrf_token %}
+        <div class="in">
+            {{ form }}
+        </div>
+        <input class="send" type="submit" value="Envoyer les données"\>
+    </form>
+{% endblock %}

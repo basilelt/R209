@@ -1,0 +1,11 @@
+{% extends "projet/genre/index.html" %}
+
+{% block title %}
+    Affiche un genre
+{% endblock %}
+
+{% block content %}
+    <h1>Information du genre : {{genre.nom}}</h1>
+    <p> {{genre}} a pour ID = {{genre.id}} </p></br>
+    <p> {{genre.description}} </p>
+{% endblock %}

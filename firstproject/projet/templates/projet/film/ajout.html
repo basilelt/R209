@@ -1,0 +1,15 @@
+{% extends "projet/film/index.html" %}
+
+{% block title %}
+    Ajout d'un film
+{% endblock %}
+
+{% block content %}
+    <form method="post" action="/projet/film/traitement/">
+        {% csrf_token %}
+        <div class="in">
+            {{ form }}
+        </div>
+        <input class="send" type="submit" value="Envoyer les données"\>
+    </form>
+{% endblock %}

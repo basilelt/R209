@@ -1,0 +1,16 @@
+{% extends "projet/genre/index.html" %}
+
+{% block title %}
+    Affiche les genres
+{% endblock %}
+
+{% block content %}
+    <h1>Liste de tous les genre</h1>
+    {% for genre in all %}
+        <p> {{genre}} 
+            <a class="link" href="/projet/genre/affiche/{{genre.id}}"> afficher </a>
+            <a class="link" href="/projet/genre/update/{{genre.id}}"> modifier </a>
+            <a class="link" href="/projet/genre/delete/{{genre.id}}"> supprimer </a>
+        </p>
+    {%endfor%}
+{% endblock %}
