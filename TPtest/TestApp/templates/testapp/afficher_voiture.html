@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+
+{% block title %}
+    Fiche d'une voiture
+{% endblock %}
+
+{% block content %}
+    <h1> Information de la voiture {{voiture.marque}} {{voiture.modele}} </h1>
+    <p> {{voiture}} </p></br>
+    <p> {{voiture.description}} </p>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+
+{% block title %}
+    Liste des voitures
+{% endblock %}
+
+{% block content %}
+    <h1>Liste des voitures</h1>
+    <p><a class="link" href="/testapp/ajouter_voiture/" class="btn">Ajouter une voiture</a></p></br>
+    {% for i in all %}
+        <p> {{i}}
+            <a class="link" href="/testapp/afficher_voiture/{{i.id}}"> afficher </a>
+            <a class="link" href="/testapp/modifier_voiture/{{i.id}}"> modifier </a>
+            <a class="link" href="/testapp/supprimer_voiture/{{i.id}}"> supprimer </a>
+        </p>
+    {%endfor%}
+{% endblock %}

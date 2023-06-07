@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block content %}
+    <h1> Bienvenue sur le site du garage automobile Django </h1>
+    
+    {% load static %}
+    <img src="{%static '/testapp/voiture.png'%}">
+{% endblock %}

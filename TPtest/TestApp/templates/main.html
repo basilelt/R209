@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{%static '/testapp/main.css'%}">
+    <title>{% block title %} Garage Automobile {% endblock %} </title>
+</head>
+
+<body>
+    <aside id="sidebar">
+        {% block sidebar %}
+            <nav>
+                <button><a class="selector" href="/testapp/index">Index</a></button></br>
+                <button><a class="selector" href="/testapp/voitures">Voitures</a></button></br>
+            </nav>    
+        {% endblock %}
+    </aside>
+
+    <div class="block" id="content">
+        {% block content %}
+            <h1> bloc principal </h1>
+        {% endblock %}
+    </div>
+</body>
+
+</html>

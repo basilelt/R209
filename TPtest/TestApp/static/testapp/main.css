@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+	margin: 0;
+	background-color: rgb(44, 44, 44);
+	min-height: 100vh;
+	display:flex;
+	flex-direction:column;
+}
+
+h1 {
+	margin: 0;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'Poppins', sans-serif;
+	background-color: rgb(44, 44, 44);
+	padding-top: 26px;
+	padding-bottom: 26px;
+	color: #DBDBDB;
+	font-size: 2em;
+	display: flex;
+	justify-content: center;
+}
+
+nav {
+	margin: 0;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+  	text-align: center;
+  	padding: 0;
+  	width: 80%;
+  	background-color: rgb(44, 44, 44);
+  	position:relative;
+  	justify-content: space-around;
+}
+
+button {
+	margin: 0;
+  	background-color: #6A7466;
+  	width: 100%;
+  	height: 70px;
+}
+
+.selector {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 0px rgba(0, 0, 0, 0.4);
+    letter-spacing: .2em;
+    text-decoration: none;
+    transition: color 200ms;
+    transform-style: preserve-3d;
+}
+.selector:hover {
+    color: #59910F;
+}
+
+.block {
+    margin: 0;
+    background-color: rgb(44, 44, 44);
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+img {
+	width: 70%;
+	height: 70%;
+	object-fit: cover;
+    align-self: center;
+}
+
+form {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	color: #DBDBDB;
+	font-size: 1em;
+	display: grid;
+	justify-content: center;
+    padding-top: 16px;
+}
+
+.in {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 12px;
+	text-decoration: solid;
+}
+
+input{
+	border-radius: 6px;
+}
+
+.send {
+	background-color: #6A7466;
+	color: #DBDBDB;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	color: #DBDBDB;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
